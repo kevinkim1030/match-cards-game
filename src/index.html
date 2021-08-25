@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" defer src="script.js"></script>
+</head>
+<body>
+    <div class="top-container">
+      <div id="top" class="top"><strong><h2>MATCH THE CARDS!</h2></strong></div>
+      <header class="header">
+        <button class="button" id="starter">Start Game</button>
+        <button class="button change-name-button" id="change-name">Change name</button>
+      </header>
+      <div class="counter" id="counter">0</div>
+    </div>
+    <div id="enter-username" class="enter-username">
+      <!-- <div id="enter-username" class="sign-in"></div> -->
+      <!-- Sign Up Modal content -->
+      <div class="username">
+        <div></div>
+          <form class="username-container">
+            <h2>Enter username to play!</h2>
+            <input id="username" type="text" placeholder="Username"></input>
+            <button type="button" id="username-btn">Enter</button>
+          </form>
+        <span id="close" class="close">&times;</span>
+      </div>
+    </div>
+    <div id="congratsModal" class="congrats">
+      <div id="congrats-content" class="congrats-content">
+      </div>
+    </div>
+    <section id="memory-game" class="memory-game">
+      <div class="memory-card" data-framework="alex">
+      <img class="front-face" src="../images/alex.jpeg" alt="Alex" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="alex">
+      <img class="front-face" src="../images/alex.jpeg" alt="Alex" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="edwin">
+      <img class="front-face" src="../images/edwin.jpeg" alt="Edwin" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="edwin">
+      <img class="front-face" src="../images/edwin.jpeg" alt="Edwin" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="james">
+      <img class="front-face" src="../images/james.jpeg" alt="James" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="james">
+      <img class="front-face" src="../images/james.jpeg" alt="James" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="kevin">
+      <img class="front-face" src="../images/kevin.jpeg" alt="Kevin" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="kevin">
+      <img class="front-face" src="../images/kevin.jpeg" alt="Kevin" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="maddy">
+      <img class="front-face" src="../images/maddy.jpeg" alt="Maddy" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="maddy">
+      <img class="front-face" src="../images/maddy.jpeg" alt="Maddy" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="nat">
+      <img class="front-face" src="../images/nat.jpeg" alt="Nat" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="nat">
+      <img class="front-face" src="../images/nat.jpeg" alt="Nat" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="saman">
+      <img class="front-face" src="../images/saman.jpeg" alt="Saman" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="saman">
+      <img class="front-face" src="../images/saman.jpeg" alt="Saman" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="sean">
+      <img class="front-face" src="../images/sean.jpeg" alt="Sean" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="sean">
+      <img class="front-face" src="../images/sean.jpeg" alt="Sean" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="shakil">
+      <img class="front-face" src="../images/shakil.jpeg" alt="Shakil" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="shakil">
+      <img class="front-face" src="../images/shakil.jpeg" alt="Shakil" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="tarzy">
+      <img class="front-face" src="../images/tarzy.jpeg" alt="Tarzy" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="tarzy">
+      <img class="front-face" src="../images/tarzy.jpeg" alt="Tarzy" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="tim">
+      <img class="front-face" src="../images/tim.jpeg" alt="Tim" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="tim">
+      <img class="front-face" src="../images/tim.jpeg" alt="Tim" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="zalmy">
+      <img class="front-face" src="../images/zalmy.jpeg" alt="Zalmy" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="zalmy">
+      <img class="front-face" src="../images/zalmy.jpeg" alt="Zalmy" />
+      <img class="back-face" src="../images/js-badge.svg" alt="JS Badge" />
+    </div>
+    </section>
+</body>
+</html>
